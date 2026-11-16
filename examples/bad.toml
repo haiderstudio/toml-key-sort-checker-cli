@@ -1,0 +1,8 @@
+# A config with keys out of order.
+
+zebra = 1
+apple = 2
+
+[server]
+port = 8080
+host = "localhost"

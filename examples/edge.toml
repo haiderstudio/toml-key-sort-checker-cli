@@ -1,0 +1,28 @@
+# Edge cases: case-insensitive order, comments, quoted keys,
+# dotted keys, inline tables, multi-line strings and arrays.
+
+Apple = 1
+banana = 2
+Cherry = 3
+
+# A comment line and a blank line do not break the order.
+[database]
+alpha = 2
+"Beta" = 1
+
+[server]
+host.name = "web"
+host.port = 80
+tags = [
+  "web",
+  "api",
+]
+
+[notes]
+text = """
+zebra: this is text, not a key
+apple: so is this
+"""
+
+[point]
+coords = {x = 1, y = 2}
